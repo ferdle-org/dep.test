@@ -1,58 +1,19 @@
 {
-  "name": "@vortex/vortex",
-  "version": "0.0.0",
+  "name": "dep.test",
+  "version": "1.0.0",
+  "description": "A test repository for managing dependencies.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ferdle-org/dep.test.git"
+  },
+  "author": "",
+  "license": "MIT",
   "private": true,
-  "engines": {
-    "pnpm": ">=9.5"
+  "dependencies": {
+    "@eslint/plugin-kit": "0.2.2"
   },
   "scripts": {
-    "prepare": "husky .husky"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "husky": "^9.1.6",
-    "typescript": "catalog:"
-  },
-  "pnpm": {
-    "overrides": {
-      "@aws-sdk/types": "catalog:cdk",
-      "@aws-sdk/client-eks": "catalog:cdk",
-      "@aws-sdk/client-s3": "catalog:cdk",
-      "@aws-sdk/client-ssm": "catalog:cdk",
-      "@aws-sdk/client-sts": "catalog:cdk",
-      "@aws-sdk/core": "catalog:cdk",
-      "@typescript-eslint/parser": "catalog:",
-      "@typescript-eslint/typescript-estree": "catalog:"
-    },
-    "packageExtensions": {
-      "@redocly/openapi-core": {
-        "dependencies": {
-          "@types/js-yaml": "*",
-          "json-schema-to-ts": "*"
-        }
-      },
-      "aws-cdk": {
-        "peerDependencies": {
-          "promptly": "*"
-        }
-      },
-      "cosmiconfig-typescript-loader": {
-        "dependencies": {
-          "typescript": "catalog:"
-        }
-      }
-    },
-    "peerDependencyRules": {
-      "allowAny": [
-        "@aws-cdk/*",
-        "aws-cdk",
-        "aws-cdk-lib"
-      ]
-    },
-    "allowedDeprecatedVersions": {
-      "@aws-sdk/node-http-handler": "3.374.0",
-      "querystring": "0.2.0"
-    }
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
