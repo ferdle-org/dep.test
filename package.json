@@ -11,7 +11,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@eslint/plugin-kit": "0.2.2"
+    "@eslint/plugin-kit": "0.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
